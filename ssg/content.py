@@ -6,5 +6,5 @@ class Content(Mapping):
     __delimeter = "^(?:-|\+){3}\s*$"
     __regex = re.compile(__delimeter, re.MULTILINE)
 
-    @classmethod
-    def Load(self)
+    # @classmethod
+    # def Load(self):
