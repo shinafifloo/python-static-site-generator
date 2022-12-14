@@ -45,3 +45,5 @@ class MarkdownParser(Parser):
 
     def parse(self, path: Path, source: Path, dest: Path):
         content = Content.load(self.read(path))
+        html = markdown(content.body)
+        
